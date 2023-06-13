@@ -1,13 +1,84 @@
 <html>
     <head>
         <title>首页</title>
+        <link rel="stylesheet" href="../layui/css/layui.css">
+        <style>
+            html body{
+                margin: 0;
+                padding: 0;
+            }
+            #div_news{
+                height: 320px;padding-left:25px ;padding-top:10px ;
+            }
+            #div_news a{
+                color: grey;
+                
+            }
+
+            #div_news a:hover{
+                color: orange;
+            }
+
+
+        </style>
     </head>
-    <body>
-        sy
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        jieguo
+
+    <body> 
+        
+        <div style="height: 360px;background-color: RGB(240,240,240);padding: 20px 0px 20px 20px;">
+            <div class="layui-carousel" id="ID-carousel-demo-image" style="float: left;">
+                <div carousel-item>
+                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-1.jpg"></div>
+                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-2.jpg"></div>
+                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-3.jpg"></div>
+                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-4.jpg"></div>
+                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-5.jpg"></div>
+                </div>
+            </div>  
+            <div style="float: right; height: 360px;width: calc(100% - 720px);">
+                <div style="margin: auto;background-color: white;height: 100%;width: 80%;;">
+                    <div style="height: 38px;line-height: 38px;border-bottom: 2px solid orange;">
+                        <h2 style="margin-left: 10px;">最新发布</h2>
+                    </div>
+
+                    <div id="div_news">
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
+                        <br>
+
+
+                    </div>
+                    
+
+                </div>
+            </div>   
+        </div>
+
+        <script src="../layui/layui.js"></script>
+        <script>
+            layui.use(function(){
+              var carousel = layui.carousel;
+              // 渲染 - 图片轮播
+              carousel.render({
+                elem: '#ID-carousel-demo-image',
+                width: '720px',
+                height: '360px',
+                interval: 3000
+              });
+            });
+            </script>
     </body>
 </html>
