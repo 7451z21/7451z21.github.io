@@ -6,66 +6,105 @@
             html body{
                 margin: 0;
                 padding: 0;
+                background-color: RGB(240,240,240);
             }
-            #div_news{
-                height: 320px;padding-left:25px ;padding-top:10px ;
-            }
-            #div_news a{
-                color: grey;
+            #div_main{
                 
             }
 
-            #div_news a:hover{
-                color: orange;
+            #div_top{
+                margin: auto;
+                height: 360px;
+                width: 90%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+            }
+            #div_img{
+                height: 360px;
+                width: 720px;
+                float: left;
             }
 
+            #div_news{
+                width: 360px;
+                height: 360px;
+                float: right;
+                background-color: white;
+            }
+            #div_news a{
+                display:block;
+                margin-left: 30px;
+            }
+
+            #div_contain{
+                width: 90%;
+                height: 400px;
+                background-color: white;
+                margin: auto;
+            }
 
         </style>
     </head>
 
     <body> 
-        
-        <div style="height: 360px;background-color: RGB(240,240,240);padding: 20px 0px 20px 20px;">
-            <div class="layui-carousel" id="ID-carousel-demo-image" style="float: left;">
-                <div carousel-item>
-                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-1.jpg"></div>
-                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-2.jpg"></div>
-                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-3.jpg"></div>
-                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-4.jpg"></div>
-                  <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-5.jpg"></div>
+        <div id="div_main">
+            <div id="div_top">
+                <div id="div_img">
+                    <div class="layui-carousel" id="ID-carousel-demo-image">
+                        <div carousel-item>
+                          <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-1.jpg"></div>
+                          <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-2.jpg"></div>
+                          <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-3.jpg"></div>
+                          <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-4.jpg"></div>
+                          <div><img src="https://unpkg.com/outeres/demo/carousel/720x360-5.jpg"></div>
+                        </div>
+                    </div>  
                 </div>
-            </div>  
-            <div style="float: right; height: 360px;width: calc(100% - 720px);">
-                <div style="margin: auto;background-color: white;height: 100%;width: 80%;;">
-                    <div style="height: 38px;line-height: 38px;border-bottom: 2px solid orange;">
-                        <h2 style="margin-left: 10px;">最新发布</h2>
-                    </div>
+                <div id="div_news">
 
-                    <div id="div_news">
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-                        <a href=""><h3>关于金牌员工的十二条标准</h3></a>
-                        <br>
-
-
-                    </div>
-                    
+                    <blockquote class="layui-elem-quote">
+                        推荐阅读
+                    </blockquote>
+                    <a href=""><h4> <span class="layui-badge">1</span> 关于金牌员工的十二条标准</h4></a>
+                    <hr>
+                    <a href=""><h4> <span class="layui-badge">2</span> 关于金牌员工的十二条标准</h4></a>
+                    <hr>
+                    <a href=""><h4> <span class="layui-badge">3</span> 关于金牌员工的十二条标准</h4></a>
+                    <hr>
+                    <a href=""><h4> <span class="layui-badge layui-bg-green">4</span> 关于金牌员工的十二条标准</h4></a>
+                    <hr>
+                    <a href=""><h4> <span class="layui-badge layui-bg-green">5</span> 关于金牌员工的十二条标准</h4></a>
+                    <hr>
+                    <a href=""><h4> <span class="layui-badge layui-bg-green">6</span> 关于金牌员工的十二条标准</h4></a>
+                    <hr>
+                    <a href=""><h4> <span class="layui-badge layui-bg-green">7</span> 关于金牌员工的十二条标准</h4></a>
+                    <hr>
 
                 </div>
-            </div>   
+                <div style="clear: both;"></div>
+            </div>
+
+            <div id="div_contain">
+                <div>
+                    <blockquote class="layui-elem-quote">
+                        最新发布
+                    </blockquote>
+                </div>
+
+                <div style="width:100%;height: 140px;background-color: antiquewhite;">
+                    <div style="height: 140px;width: 200px;float: left;"><img src="../public/img/1.png" alt="" height="140px" width="200px"></div>
+                    <div style="height: 140px;width:400px;float: left;border-right: 1px solid gray;background-color: aquamarine;margin-left:20px">
+                        <h4 style="float: left;margin-top: 10px;margin-left: 20px;">示例但是有用</h4>
+                        <h6 style="float: right;margin-top: 10px;margin-right: 10px;">2020-02-01</h6>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
+        
+
 
         <script src="../layui/layui.js"></script>
         <script>
