@@ -10,11 +10,43 @@
                 margin: 0;
                 padding: 0;
             }
+            #menu a:hover{
+                background-color:RGB(22,186,170);
+            }
         </style>
     </head>
     <body>
-        <div class="layui-container" style="background-color: aliceblue;">
-            <p>前言：我的梦想是。。。</p>
+        <div>
+            <div class="layui-row " >
+                <div class="layui-col-md2">
+                    <div id="menu" style="height: 100%;overflow-y: scroll; ">
+                        <ul class="layui-nav layui-nav-tree layui-bg-gray" style="width: 100%;">
+                            <li class="layui-nav-item layui-this"><a href="../views/about/about-1.html" target="div_right">我的简历1</a></li>
+                            <li class="layui-nav-item"><a href="../views/about/about-2.html" target="div_right">我的简历2</a></li>
+                            <li class="layui-nav-item"><a href="../views/about/about-3.html" target="div_right">我的简历3</a></li>
+                            <li class="layui-nav-item"><a href="../views/about/about-4.html" target="div_right">我的简历4</a></li>
+                            <li class="layui-nav-item"><a href="../views/about/about-5.html" target="div_right">我的简历5</a></li>
+                            <li class="layui-nav-item"><a href="../views/about/about-6.html" target="div_right">我的简历6</a></li>
+
+                            <!-- <li class="layui-nav-item">
+                              <a href="javascript:;">子级</a>
+                              <dl class="layui-nav-child">
+                                <dd><a href="#" target="div_right">菜单1</a></dd>
+                                <dd><a href="#" target="div_right">菜单2</a></dd>
+                                <dd><a href="#" target="div_right">菜单3</a></dd>
+                              </dl>
+                            </li> -->
+
+                          </ul>
+                    </div>
+                </div>
+                <div class="layui-col-md10">
+                    <div style="height:100% ;">
+                        <iframe name="div_right" src="../views/about/about-1.html" frameborder="0" height="100%" width="100%" overflow-y="auto" ></iframe> </iframe>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </body>
 </html>
